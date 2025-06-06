@@ -4,6 +4,11 @@
 
 ---
 
+## 👤 Integrantes
+- David Guilherme B. Denunci - rm98603
+- Lucas P. de Toledo - rm97913
+
+
 ## 🎯 Finalidade
 
 O sistema foi projetado para atender demandas reais de monitoramento e resposta a falhas, com foco em:
@@ -26,9 +31,26 @@ Ideal para profissionais de infraestrutura, operação de TI, analistas de manut
 - Oracle Client instalado
 - Banco de dados Oracle com tabelas e permissões configuradas
 
-### Passos
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/energyshield.git
-   cd energyshield
+## 📂 Estrutra
+``` 
+energyshield/
+│
+├── Controller/
+│   ├── RegistrarOcorrencia.cs
+│   ├── ClassificarFalha.cs
+│   ├── AgendarManutencao.cs
+│   ├── ExibirOcorrencias.cs
+│   └── ExibirRelatorios.cs
+│
+├── DAL/
+│   └── Banco.cs
+│
+├── Model/                     
+│   ├── Ocorrencia.cs
+│   └── Manutencao.cs
+│
+└── Program.cs
+
+```
+
