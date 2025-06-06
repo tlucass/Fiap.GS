@@ -80,7 +80,6 @@ if (autenticado)
                 Console.Write("Sintoma observado: ");
                 string sintoma = Console.ReadLine();
 
-                // Nome do local - opções fixas
                 string[] locais = {
         "Sala de Servidores",
         "Data Center",
@@ -102,9 +101,18 @@ if (autenticado)
                 }
                 string nomeLocal = locais[opcaoLocal - 1];
 
-                string[] departamentos = { "TI", "Financeiro", "Operações", "RH", "Manutenção", "Pediatria" };
+                string[] departamentos = {
+                    "Emergência",
+                    "Centro Cirúrgico",
+                    "UTI",
+                    "Enfermaria",
+                    "Radiologia",
+                    "Laboratório",
+                    "Farmácia",
+                    "Administração"
+                };
 
-                Console.WriteLine("\nEscolha o departamento responsável:");
+                Console.WriteLine("\nEscolha o principal departamento afetado:");
                 for (int i = 0; i < departamentos.Length; i++)
                     Console.WriteLine($"{i + 1} - {departamentos[i]}");
 
