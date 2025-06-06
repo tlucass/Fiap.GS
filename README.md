@@ -32,6 +32,42 @@ Ideal para profissionais de infraestrutura, operação de TI, analistas de manut
 - Banco de dados Oracle com tabelas e permissões configuradas
 
 
+## 🛠️ Instruções de Uso
+
+### Acesso ao Sistema  
+- Ao iniciar o programa, será solicitado o **login** e a **senha**.  
+- Utilize as credenciais padrão:  
+  - **Usuário:** `admin`  
+  - **Senha:** `admin123`  
+- O sistema permite até 3 tentativas antes de encerrar a aplicação.
+
+---
+
+### 1. Registrar Ocorrência  
+- Forneça o **sintoma observado**, **local**, **setor hospitalar** e **duração estimada da falha**.  
+- Os locais e setores disponíveis são listados para escolha numérica, garantindo padronização.
+
+### 2. Classificar Falha  
+- Informe o **ID da ocorrência** registrada.  
+- Selecione o **equipamento danificado** a partir de uma lista fornecida.  
+- A severidade será determinada automaticamente com base no tipo de equipamento e no tempo desde a falha.
+
+### 3. Agendar Manutenção  
+- Informe a **data e hora futura** da manutenção (formato `dd/MM/yyyy HH:mm`).  
+- Insira o **nome do responsável** que fará a manutenção e escolha o tipo de intervenção: **preventiva** ou **corretiva**.
+
+### 4. Exibir Relatórios  
+- Veja a **frequência de ocorrências por local**.  
+- Consulte o **relatório de severidade das falhas**.  
+- Acesse também a **agenda de manutenções futuras** e saiba **quantos agendamentos existem para a semana atual**.
+
+### 5. Exibir Histórico de Ocorrências  
+- Lista completa das ocorrências registradas no sistema.
+
+### 6. Sair  
+- Encerra a sessão e finaliza a aplicação.
+
+
 ## 📂 Estrutra
 ``` 
 energyshield/
@@ -50,7 +86,8 @@ energyshield/
 │   ├── Ocorrencia.cs
 │   └── Manutencao.cs
 │
-└── Program.cs
+└── View/                     
+    └── Program.cs
 
 ```
 
